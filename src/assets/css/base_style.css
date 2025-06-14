@@ -376,7 +376,7 @@ a:hover { text-decoration: none; }
 .fa-hidden { display: none; }
 .btn-cover-layer { margin-right: 10px; }
 #fswaitlayer { display:none; position:absolute; left:1px; top:1px; z-Index:9999; font-size: 50px; color: #1E90FF; }
-.btn-ctrl { margin-top: 10px; margin-right: 10px; min-width: 100px; }
+.btn-ctrl { margin-top: 5px; margin-right: 10px; min-width: 100px; }
 .btn-ctrl-cover { padding-right: 30px; padding-bottom: 15px; }
 .btn-span { padding-left: 5px; }
 .img-lang { width: 30px; height: 15px; }
@@ -388,3 +388,4 @@ a:hover { text-decoration: none; }
 .img-lang-LA { content: url(../img/lang/LA.png); }
 .img-lang-JP { content: url(../img/lang/JP.png); }
 div.date-control { padding-right: 0px; display: flex; }
+#app { display: flex; flex-direction: column; }
