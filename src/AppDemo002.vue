@@ -15,7 +15,7 @@ import $ from "jquery";
 import PageHeader from '@/controls/PageHeader.vue';
 import SearchForm from '@/components/SearchForm.vue';
 import EntryForm from '@/components/EntryForm.vue';
-import { getLabelModel } from "@/assets/js/label.util.js";
+import { getLabelModel, loadAndMergeLabel } from "@/assets/js/label.util.js";
 import { DEFAULT_CONTENT_TYPE, getDefaultLanguage, setDefaultLanguage, getApiUrl, getMultiLanguagesModel, getMetaInfo } from "@/assets/js/app.info.js";
 import { startApplication, serializeParameters } from "@/assets/js/app.util.js";
 import { getPermitModel, Permission } from './assets/js/permit.util';
