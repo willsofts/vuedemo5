@@ -191,7 +191,7 @@ export function alertbox(errcode, callback, defaultmsg, params, addonmsg, title,
 		}
 	}
 }
-export function alertDialog(msg, callbackfn, title="Alert", icon="fa fa-bell-o") {
+export function alertDialog(msg, callbackfn, title="Alert", icon="fa fa-bell-o fas fa-bell") {
 	if(!msg) { console.log("alertDialog: msg undefined"); return; }
 	try {
 		let fs_okbtn = getMessageCode("fsokbtn"); if(!fs_okbtn || (fs_okbtn=="" || fs_okbtn=="fsokbtn")) fs_okbtn = "OK";
@@ -226,7 +226,7 @@ export function confirmbox(errcode, okFn, cancelFn, defaultmsg, params, addonmsg
 		}
 	}
 }
-export function confirmDialog(msg, okCallback, cancelCallback, title="Confirmation", icon="fa fa-question-circle") {
+export function confirmDialog(msg, okCallback, cancelCallback, title="Confirmation", icon="fas fa fa-question-circle") {
 	try {
 		let fs_confirmbtn = getMessageCode("fsconfirmbtn"); if(!fs_confirmbtn || (fs_confirmbtn=="" || fs_confirmbtn=="fsconfirmbtn")) fs_confirmbtn = "OK";
 		let fs_cancelbtn = getMessageCode("fscancelbtn"); if(!fs_cancelbtn || (fs_cancelbtn=="" || fs_cancelbtn=="fscancelbtn")) fs_cancelbtn = "Cancel";
