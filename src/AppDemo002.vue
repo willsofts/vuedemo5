@@ -56,6 +56,11 @@ export default {
           this.loadDataCategories(!this.alreadyLoading,() => {
             this.$refs.pageHeader.changeLanguage(getDefaultLanguage());
           });
+          loadAndMergeLabel("demo002", (success) => {
+            if (success) {
+              this.changeLanguage(getDefaultLanguage());
+            }
+          });
         }
       });
       //try to find out parameters from url
